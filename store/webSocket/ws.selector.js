@@ -1,0 +1,1 @@
+export const selectCurrentWs = (state) => state.ws;

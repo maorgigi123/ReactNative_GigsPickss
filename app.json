@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "Gigs",
+    "slug": "Gigs",
+    "scheme": ["Gigs"],
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "extra": {
+      "EXPO_PUBLIC_API_URL": "https://server-social-media.vercel.app",
+      "EXPO_PUBLIC_API_URL_WS": "server-social-media.vercel.app",
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a2ac01f0-2061-4190-aea8-0feca93a9378"
+      }
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.jpg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#288eee"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.Gigs.Gigs",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to show your photos.",
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to show your position on the map."
+      },
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_ANDROID_API_KEY_HERE"
+        }
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "INTERNET"
+      ],
+      "package": "com.Gigs.Gigs"
+    },
+    "web": {
+      "favicon": "./assets/favicon.jpg"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-router",
+      "expo-notifications"
+    ]
+  }
+}
